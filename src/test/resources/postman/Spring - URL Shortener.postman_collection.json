@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "b8101e7a-fbda-43c4-8f3c-1aa32b691fa5",
+		"name": "Spring - URL Shortener",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve URL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8085/rest/url/099048b6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"rest",
+						"url",
+						"099048b6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create short url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"url\": \"https://www.youtube.com/watch?v=Zr0E2VP24w8\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8085/rest/url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"rest",
+						"url"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
